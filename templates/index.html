@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Reccomendation</title>
+</head>
+<body>
+    <div class=container>
+        <h1 class='title'>Get your recommendations here</h1>
+        <form action='/' method='GET'>
+            <div class='search'>
+                <select class="form-control" id="choice" name="choice">
+                    <option value="movie">movie</option>
+                    <option value="book">book</option>
+                </select>
+                <input type="text" class='searchTerm' placeholder="Search.." name="name">
+                <button type="submit" class='searchButton'>
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+        {% for movie in movies %}
+            <p class='recmovie'> {{movie}} </p>
+        {% endfor %}
+        {% for book in books %}
+            <p class='recbook'> {{book}} </p>
+        {% endfor %}
+
+        <button id='addWatchList'>Add to watchlist</button>
+    </div>
+    
+
+    <script type= 'text/javascript' src="{{url_for('static', filename='js/script.js') }}"></script>
+
+</body>

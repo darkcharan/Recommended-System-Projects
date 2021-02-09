@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*
+{
+    outline: none;
+}
+
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+/* body
+{
+    margin: 0;
+    background-color: #ffd8d8;
+
+} */
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .searchTerm {
+    width: 80%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    /* color: #9DBFAF; */
+    
+  }
+
+  .searchTerm:focus{
+    /* color: #00B4CC; */
+  }
+
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.form-control{
+    padding: 2em;
+    border: 3px solid #00B4CC;
+    border-radius: 0 5px 5px 0;
+    background-color: #00B4CC;
+}
+
+.container{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.title{
+  margin-left: 25%;
+}
+
+.recmovie{
+  margin-left: 10%;
+  margin-top: 2em;
+}
+
+.recbook{
+  margin-left: 10%;
+  margin-top: 2em;
+}
+
+#addWatchList{
+  background-color:#00B4CC;
+	border-radius:28px;
+	border:1px solid #00B4CC;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
